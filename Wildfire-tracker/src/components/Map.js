@@ -18,7 +18,7 @@ const Map = ({ eventData, center,zoom}) => {
     return (
         <div className="map">
             <GoogleMapReact
-            bootstrapURLKeys = {{ key: 'AIzaSyDSJUyOnN4rh1CBdn8-uTrWufYzS1DWuWs'}}
+            bootstrapURLKeys = {{ key: 'YOUR_API_KEY'}}
             defaultCenter={center}
             defaultZoom={ zoom}>
                 {markers}
@@ -33,7 +33,7 @@ Map.defaultProps = {
     center: {
         lat: 20.2961,
         lng: 85.8245
-    },
+    }, // it's the coordinates of my home city
     zoom: 6
 }
 
